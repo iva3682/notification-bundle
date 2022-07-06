@@ -168,7 +168,7 @@ class NotificationManager
         if (!$entity) {
             $entity = new NotifiableEntity($identifier, $class);
             $this->om->persist($entity);
-            $this->om->flush();
+            // $this->om->flush();
         }
 
         return $entity;
